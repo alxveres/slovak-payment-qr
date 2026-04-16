@@ -1,0 +1,47 @@
+{
+  "name": "payme-qr",
+  "version": "1.0.0",
+  "description": "Generate QR codes for Slovak Payment Link Standard v2.0 (payme.sk / PAY by square)",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepublishOnly": "npm run build && npm test"
+  },
+  "keywords": [
+    "payment",
+    "qr-code",
+    "slovakia",
+    "payme",
+    "pay-by-square",
+    "sepa",
+    "iban"
+  ],
+  "license": "MIT",
+  "files": [
+    "dist",
+    "examples"
+  ],
+  "dependencies": {
+    "@resvg/resvg-js": "^2.6.2",
+    "bysquare": "^4.0.0",
+    "qrcode": "^1.5.4"
+  },
+  "devDependencies": {
+    "@types/qrcode": "^1.5.5",
+    "typescript": "^5.7.0",
+    "vitest": "^3.0.0"
+  }
+}
