@@ -308,4 +308,6 @@ const html = `<img src="${dataUrl}" alt="Payment QR code" />`
 
 ## License
 
-MIT
+`payme-qr` is released under the MIT License. See [LICENSE](LICENSE).
+
+PAY by square encoding is provided through the [`bysquare`](https://www.npmjs.com/package/bysquare) runtime dependency, which is released under the Apache License 2.0. See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
