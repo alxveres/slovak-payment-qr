@@ -28,7 +28,7 @@ const VERSION_MAP: Record<BySquareVersion, VersionType> = {
   '1.2.0': Version['1.2.0'],
 };
 
-const DEFAULT_BYSQUARE_VERSION: BySquareVersion = '1.1.0';
+const DEFAULT_BYSQUARE_VERSION: BySquareVersion = '1.0.0';
 const SLOVAK_SYMBOLS_PATTERN = /^\/VS(?<vs>\d{1,10})(?:\/SS(?<ss>\d{1,10}))?(?:\/KS(?<ks>\d{1,4}))?$/;
 
 /**
