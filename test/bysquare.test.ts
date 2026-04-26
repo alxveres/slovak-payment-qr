@@ -16,8 +16,8 @@ describe('generateBySquareString', () => {
 
     expect(typeof result).toBe('string');
     expect(result.length).toBeGreaterThan(0);
-    // Default version 1.1.0 -> header starts with "04"
-    expect(result.startsWith('04')).toBe(true);
+    // Default version 1.0.0 -> header starts with "02"
+    expect(result.startsWith('00')).toBe(true);
   });
 
   it('generates v1.0.0 encoded string when specified', () => {

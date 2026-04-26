@@ -1,6 +1,6 @@
 {
   "name": "slovak-payment-qr",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Generate QR codes for Slovak Payment Link Standard v2.0 (payme.sk / PAY by square)",
   "type": "module",
   "homepage": "https://github.com/alxveres/slovak-payment-qr#readme",
