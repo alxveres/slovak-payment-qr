@@ -1,8 +1,16 @@
 {
-  "name": "payme-qr",
+  "name": "slovak-payment-qr",
   "version": "1.0.0",
   "description": "Generate QR codes for Slovak Payment Link Standard v2.0 (payme.sk / PAY by square)",
   "type": "module",
+  "homepage": "https://github.com/alxveres/slovak-payment-qr#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alxveres/slovak-payment-qr.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alxveres/slovak-payment-qr/issues"
+  },
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "exports": {
@@ -24,6 +32,7 @@
     "payment",
     "qr-code",
     "slovakia",
+    "slovak-payment",
     "payme",
     "pay-by-square",
     "sepa",

@@ -1,4 +1,4 @@
-# payme-qr
+# slovak-payment-qr
 
 Generate QR codes for Slovak bank payments.
 
@@ -13,7 +13,7 @@ Supported formats:
 ## Installation
 
 ```bash
-npm install payme-qr
+npm install slovak-payment-qr
 ```
 
 Requirements:
@@ -27,7 +27,7 @@ import {
   generateBySquareQrBrandedPng,
   generateBySquareQrDataUrl,
   generatePaymentLink,
-} from 'payme-qr'
+} from 'slovak-payment-qr'
 
 const paymentData = {
   iban: 'SK6807200002891987426353',
@@ -164,7 +164,7 @@ The library validates inputs before generating output:
 ### Branded PAY by square QR
 
 ```ts
-import { generateBySquareQrBrandedPng } from 'payme-qr'
+import { generateBySquareQrBrandedPng } from 'slovak-payment-qr'
 import { writeFileSync } from 'node:fs'
 
 const png = await generateBySquareQrBrandedPng(
@@ -189,7 +189,7 @@ writeFileSync('payment-qr.png', png)
 ### Branded payme QR
 
 ```ts
-import { generateQrBrandedPng } from 'payme-qr'
+import { generateQrBrandedPng } from 'slovak-payment-qr'
 
 const png = await generateQrBrandedPng(
   {
@@ -212,8 +212,8 @@ const png = await generateQrBrandedPng(
 Override the built-in brand frame with your own SVG template function:
 
 ```ts
-import { generateBySquareQrBrandedPng } from 'payme-qr'
-import type { BrandedTemplate } from 'payme-qr'
+import { generateBySquareQrBrandedPng } from 'slovak-payment-qr'
+import type { BrandedTemplate } from 'slovak-payment-qr'
 
 const myTemplate: BrandedTemplate = (qrDataUrl, size) => {
   const height = size + 60
@@ -267,7 +267,7 @@ await generateBySquareQrPng(data, { bySquareVersion: '1.2.0' })
 ### E-commerce With Slovak Payment Symbols
 
 ```ts
-import { generateBySquareQrBrandedPng } from 'payme-qr'
+import { generateBySquareQrBrandedPng } from 'slovak-payment-qr'
 
 const png = await generateBySquareQrBrandedPng(
   {
@@ -308,6 +308,6 @@ const html = `<img src="${dataUrl}" alt="Payment QR code" />`
 
 ## License
 
-`payme-qr` is released under the MIT License. See [LICENSE](LICENSE).
+`slovak-payment-qr` is released under the MIT License. See [LICENSE](LICENSE).
 
 PAY by square encoding is provided through the [`bysquare`](https://www.npmjs.com/package/bysquare) runtime dependency, which is released under the Apache License 2.0. See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
